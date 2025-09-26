@@ -53,7 +53,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -61,23 +61,23 @@ export default function SignUp() {
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-xl">
               <Zap className="h-8 w-8 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-900">Interview-Genie</span>
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">Interview-Genie</span>
           </Link>
-          <p className="text-gray-600 mt-2">AI powered mock interview platform</p>
+          <p className="text-gray-600 dark:text-gray-300 mt-2">AI powered mock interview platform</p>
         </div>
 
         {/* Sign Up Form */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h1>
-            <p className="text-gray-600">Start your interview preparation journey today</p>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Create Account</h1>
+            <p className="text-gray-600 dark:text-gray-300">Start your interview preparation journey today</p>
           </div>
 
           {/* OAuth Buttons */}
           <div className="space-y-3 mb-6">
             <button
               onClick={handleGoogleSignUp}
-              className="w-full flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg text-gray-700 bg-white hover:bg-gray-50 transition-colors duration-200"
+              className="w-full flex items-center justify-center px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200"
             >
               <svg className="w-5 h-5 mr-3" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>

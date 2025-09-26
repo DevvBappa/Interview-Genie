@@ -30,7 +30,7 @@ export default function SignIn() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -38,16 +38,16 @@ export default function SignIn() {
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-xl">
               <Zap className="h-8 w-8 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-900">Interview-Genie</span>
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">Interview-Genie</span>
           </Link>
-          <p className="text-gray-600 mt-2">AI powered mock interview platform</p>
+          <p className="text-gray-600 dark:text-gray-300 mt-2">AI powered mock interview platform</p>
         </div>
 
         {/* Sign In Form */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
-            <p className="text-gray-600">Sign in to continue your interview preparation</p>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Welcome Back</h1>
+            <p className="text-gray-600 dark:text-gray-300">Sign in to continue your interview preparation</p>
           </div>
 
           {/* OAuth Buttons */}
